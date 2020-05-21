@@ -19,3 +19,22 @@ let arrayFive = [Int](repeating: 10, count: 6)
 arrayThree += arrayFive // Присвоили массив
 arrayThree // Массив arrayThree равен массиву arrayFive
 
+// Выводим значение конкретного элемента массива
+// Нумерация элементов массива идет с нуля
+arrayFour[2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
