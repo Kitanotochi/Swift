@@ -15,5 +15,7 @@ let arrayFour = [1, 2, 3, 4]
 //Создали массив в котором шесть элементов, значение которых равно десяти.
 let arrayFive = [Int](repeating: 10, count: 6)
 
-//Основные действия с масивами
+// Основные действия с масивами
+arrayThree += arrayFive // Присвоили массив
+arrayThree // Массив arrayThree равен массиву arrayFive
 
