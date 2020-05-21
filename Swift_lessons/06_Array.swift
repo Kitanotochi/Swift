@@ -19,6 +19,34 @@ let arrayFive = [Int](repeating: 10, count: 6)
 arrayThree += arrayFive // Присвоили массив
 arrayThree // Массив arrayThree равен массиву arrayFive
 
+// Замена элемента массива
+arrayThree[1...3] = 20
+arrayThree // Элемент заменен на значение 20
+arrayThree.count // Определяет количество элементов в массиве
+
+// Добовление элементов в массив
+// По умолчания элемент добовляется в конец массива
+arrayThree.appeend(100)
+
+// Встовляем элемент в массив по индексу
+arrayThree.insert(105, at: 2)
+
+// Удаление элементов из массива
+arrayThree.remove(at: 4) 
+arrayThree //Элемент по индексу четыре, удален
+
+// Удаление первого элемента массива
+arrayThree.removeFirst()
+arrayThree
+
+// Удаление последнего элемента массива
+arrayThree.removeLaste()
+arrayThree
+
+// Переворачивание массива
+arrayThree.reverse()
+arrayThree
+
 // Выводим значение конкретного элемента массива
 // Нумерация элементов массива идет с нуля
 arrayFour[2]
