@@ -10,4 +10,7 @@ let dictOne = Dictionary<String, String>() // Ключ имеет значени
 let dictTwo = [String: String]() // Другая форма записи словаря
 let dictThree: [String: String] = [:] // Еще одна форма записи словаря
 
+// Создаем словарь в котором три ключа и три значения
+let namesAge =["Oleg": 30, "Vitalik": 30, "Sasha": 25]
+
 
