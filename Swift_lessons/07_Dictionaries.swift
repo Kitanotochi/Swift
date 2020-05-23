@@ -8,5 +8,6 @@
 // Создание словаря
 let dictOne = Dictionary<String, String>() // Ключ имеет значение: String, значение имеет тип: String
 let dictTwo = [String: String]() // Другая форма записи словаря
+let dictThree: [String: String] = [:] // Еще одна форма записи словаря
 
 
