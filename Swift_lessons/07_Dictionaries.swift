@@ -6,5 +6,7 @@
 // Пары которые помещены в словарь, могут менять свое положение
 
 // Создание словаря
-let dict = Dictionary<String, String>() // Ключ имеет значение: String, значение имеет тип: String
+let dictOne = Dictionary<String, String>() // Ключ имеет значение: String, значение имеет тип: String
+let dictTwo = [String: String]() // Другая форма записи словаря
+
 
