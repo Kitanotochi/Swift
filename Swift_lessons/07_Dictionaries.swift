@@ -19,5 +19,32 @@ let namesAges = ["Oleg":   30,
 // Отображаем значение элементов в словаре
 namesAges.count
 
+// Свойство возврощает булевые значения "true" и "false"
+// Если словарь пустой, то значение "true", если словарь полный, то "false"
+namesAges.isEmpty
+
+// Возврощаем значение из словаря
+namesAges["Oleg"]
+
+// Изменяем значение в словаре
+namesAges["Oleg"] = 40
+namesAges
+
+// Используем старое значение в словаре
+let deletedAge = namesAges.updateValue(45, forKey: "Oleg")
+namesAges
+
+// Удаление значений в словаре
+namesAges["Oleg"] = nil
+namesAges
+
+// Используем удаленное значение
+let deletedValue = namesAges.removeValue(forKey: "Sasha")
+namesAges
+
+// Обнуление словаря
+namesAges.removeAll()
+// Другая форма записи
+namesAges = [:]
 
 
