@@ -7,4 +7,7 @@
 let setOne = Set<String>()
 let setTwo: Set<String> = []
 
+// Создание сета с помощью литерала
+let setThree: Set = [1, 2, 3, 4]
+
 
