@@ -12,3 +12,11 @@ else if a < b { // Или если "a" больше "b"
 else if b < a { // Или если "b" больше "a" вывести результат
     print("a exceeds b by \(a - b)")// Вывести результат
 }
+
+// Еще один пример
+let isSunny = true // Константа возврощает булевые значения
+var action = ""
+
+if isSunny {
+    action = "I will go for a walk"
+}
