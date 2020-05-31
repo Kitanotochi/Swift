@@ -22,3 +22,5 @@ if isSunny {
 } else {
     action = "I will sit at home"
 }
+// Используем тернарный оператор
+action = isSunny ? "I will go for a walk" : "I will sit at home"
