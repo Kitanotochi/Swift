@@ -19,4 +19,6 @@ var action = ""
 
 if isSunny {
     action = "I will go for a walk"
+} else {
+    action = "I will sit at home"
 }
