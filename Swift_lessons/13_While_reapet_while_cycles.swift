@@ -12,3 +12,13 @@ while timer > 0 {
 
 print("Start")
 
+// Пример цикла "repeat while"
+var timerOne = 5
+print("Couting down")
+
+repeat { // Здесь идет выполнение без проверки условия
+    print(timerOne)
+    timerOne -= 1
+} while timerOne > 0 // Если условие выполняется, то идет следующая итерация
+
+print("Start")
