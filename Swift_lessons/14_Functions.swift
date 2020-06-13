@@ -18,3 +18,11 @@ func oneParam (param: Int) {
 
 oneParam(param: 10)
 
+// 3. Функция, не принемающая параметры, но возвращающая значение
+func returnValue() -> Int {
+    let c = 50
+    return c
+}
+
+returnValue()
+
