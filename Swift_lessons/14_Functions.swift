@@ -26,3 +26,10 @@ func returnValue() -> Int {
 
 returnValue()
 
+// 4. Функция, принемающая несколько параметров и возврощающая значение
+func giveMeYour(name: String, secondName: String) -> {
+    return "My name is \(name) \(secondName)"
+}
+
+giveMeYour(name: "Sergei", secondName: "Ivanov")
+
