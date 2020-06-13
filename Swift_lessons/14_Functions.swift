@@ -10,3 +10,11 @@ func sayHello() -> () {
 
 sayHello()
 
+// 2. Функция, принемающая один параметр
+func oneParam (param: Int) {
+    var param = param
+    param += 1
+}
+
+oneParam(param: 10)
+
