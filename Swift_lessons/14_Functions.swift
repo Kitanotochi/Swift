@@ -33,3 +33,19 @@ func giveMeYour(name: String, secondName: String) -> {
 
 giveMeYour(name: "Sergei", secondName: "Ivanov")
 
+// 5. Функция, принемающая массив в качестве параметра и использующая вложенную функцию для работы
+func calcManyIn(array: Int) -> Int {
+    var sum = 0
+    func sayMany() {
+        print(sum)
+    }
+    
+    for item in array {
+        sum += item
+    }
+    sayMany()
+    return sum
+}
+    calcManyIn(array: [1, 2, 3, 4,5])
+
+    
