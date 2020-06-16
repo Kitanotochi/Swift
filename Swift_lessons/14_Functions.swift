@@ -63,3 +63,13 @@ func sum(_: Int) -> Int {
     return 50
 }
 
+// 8. Функция в качестве возврощаемого значения
+func whatToDo(missed: Bool) -> ((Int) -> Int) {
+func missedCountUp(input: Int) -> Int {return input +1}
+func missedCountDown(input: Int) -> Int {return input -1}
+
+    return missed ? missedCountUp : missedCountDown
+}
+var missCount = 0
+missedCount = whatToDo(missed: true)(missedCount)
+missedCount = whatToDo(missed: false)(missedCount)
