@@ -58,4 +58,8 @@ func findSum(ofIntegers integers: Int...) -> Int {
 }
     findSum(ofIntegers: 1, 2, 3, 4, 5, 6)
     
-    
+    // 7. Имена параметров функций
+func sum(_: Int) -> Int {
+    return 50
+}
+
