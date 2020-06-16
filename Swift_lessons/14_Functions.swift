@@ -48,4 +48,14 @@ func calcManyIn(array: Int) -> Int {
 }
     calcManyIn(array: [1, 2, 3, 4,5])
 
+// 6. Функция, которая принемает переменное число параметров
+func findSum(ofIntegers integers: Int...) -> Int {
+    var sum = 0 
+    for item in integers {
+        sum += item
+    }
+    return sum
+}
+    findSum(ofIntegers: 1, 2, 3, 4, 5, 6)
+    
     
