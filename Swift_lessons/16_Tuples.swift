@@ -28,6 +28,17 @@ let greenPencil = (color: "green", length: 20, weight: 4)
 let (greenColor, greenLength, greenWeight) = greenPencil
 
 
+// Еще пример
+let agesAndNames = ["Misha": 25, "Kosty": 33, "Oleg": 55]
+var age = 0 
+var name = ""
 
-
+for (nameInD, ageInD) = agesAndNames in {
+    if age < ageInD {
+        age = ageInD
+        name = nameInD
+    }
+}
+age
+name
 
