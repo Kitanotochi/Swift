@@ -15,6 +15,19 @@ boy.0
 boy.1
 
 
+// Присваиваем нескольким константам, несколько значений
+let (first, second, third) = (1, 2, 3)
+first
+second
+third
+
+
+// Более интересный кортеж 
+let greenPencil = (color: "green", length: 20, weight: 4)
+// Присваиваем все значения в три константы
+let (greenColor, greenLength, greenWeight) = greenPencil
+
+
 
 
 
