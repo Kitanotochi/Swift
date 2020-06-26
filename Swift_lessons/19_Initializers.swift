@@ -35,6 +35,5 @@ human.age
 human.name
 human.hairs
 
-
-
-
+// Создаем еще один инициализатор
+let human1 = Human1(name: "Vlad", age: 35, hairs: true)
