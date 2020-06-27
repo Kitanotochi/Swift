@@ -47,12 +47,11 @@ class Child: Human {
     }
 }
 
+let child = Child(name: "Vera")
+child.tellAboutMe()
+child.toy
+child.name
 
-
-
-
-
-
-
-
-
+// Создаем иначе
+let child1 = Child1(toy: "Spider", name: "Max")
+child1.tellAboutMe()
