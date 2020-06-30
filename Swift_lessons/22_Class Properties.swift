@@ -10,6 +10,17 @@ class Car {
     let selfWeight = 1500
     let maxWeight = 2000
 
+    // computed property
+    var totalWeight: Int {
+        return products + people + pets + selfWeight
+    }
     
+    // initializer
+    init(products: Int, people: Int, pets: Int) {
+        self.products = products
+        self.people = people
+        self.pets = pets
+    }
     
 }
+
