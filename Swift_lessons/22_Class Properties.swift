@@ -7,8 +7,8 @@ class Car {
     let products: Int
     let people: Int
     let pets: Int
-    let selfWeight = 1500
-    let maxWeight = 2000
+    class var selfWeight: Int { return 1500 }
+    class var maxWeight: Int { return 2000 }
 
     // computed property
     var totalWeight: Int {
@@ -24,3 +24,15 @@ class Car {
     
 }
 
+let car = Car(products: 30, people: 300, pets: 50)
+
+// Пример: работа со свойствами
+let maxWeight = Car.maxWeight
+let selfWeight = Car.selfWeight
+let totalWeight = car.totalWeight
+
+if maxWeight < totalWeight {
+    print("You can not drive because is car overloaded: \(totalWeight - maxWeight")
+}   else {
+    print("You can drive!!!")
+}
