@@ -32,7 +32,8 @@ let selfWeight = Car.selfWeight
 let totalWeight = car.totalWeight
 
 if maxWeight < totalWeight {
-    print("You can not drive because is car overloaded: \(totalWeight - maxWeight")
+    print("You can not drive because is car overloaded: \(totalWeight - maxWeight)")
 }   else {
     print("You can drive!!!")
 }
+
