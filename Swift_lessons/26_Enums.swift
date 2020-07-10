@@ -45,3 +45,32 @@ enum Device {
 let yearOfProduction = Device.iPad(color: "black").year
 let yearOfProduction = Device.iPhone.year
 
+
+// Пример. Вложенные Энумы
+enum Character {
+    enum Weapon: Int {
+        case sword = 4
+        case wand = 1 
+        
+        var damage: Int {
+            return rawValue * 10
+        }
+    }
+    
+    // Вложенный Энум
+    enum CharacterType {
+        case knight 
+        case mag
+    }
+}
+
+let charWeapon = Character.Weapon.sword.damage
+
+// Пример. Нидеректные Энумы
+indirect enum Lanch {
+    case salad
+    case soup
+    case meal(Lanch)
+}
+
+let myLanch = Lanch.meal(.salad, .soup)
