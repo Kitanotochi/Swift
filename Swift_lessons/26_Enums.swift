@@ -31,16 +31,17 @@ let movementDirection = Movement.backward.rawValue
 // Пример
 // Энум содержащий два кейса и одно вычесляемое свойство
 enum Device {
-    case iPad, iPhone
+    case iPad(color: String), iPhone
     
     var year: Int {
         switch self {
         case .iPhone: return 2007
-        case .iPad: return 2020
+        case .iPad(let color) where color == "black": return 2020
+        case .iPad: return 2010
         }
     }
 }
 
-let yearOfProduction = Device.iPad.year
+let yearOfProduction = Device.iPad(color: "black").year
 let yearOfProduction = Device.iPhone.year
 
