@@ -3,7 +3,7 @@
 // Структуры в Swift
 
 // Простая структура / Класс
-class Site {
+struct Site {
     // Сохраненные свойства
     var siteName = "SwiftBook.ru"
     let visitsToday = 1000
