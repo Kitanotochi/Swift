@@ -25,6 +25,7 @@ struct Site {
 let firstWebSite = Site()
 
 func changeSitename(site: Site) -> Site {
+    var site = site
     site.name = "iphonecoder.ru"
     return site
 }
