@@ -22,5 +22,14 @@ class Site {
     }
 }
 
+let firstWebSite = Site()
+
+func changeSitename(site: Site) -> Site {
+    site.name = "iphonecoder.ru"
+    return site
+}
+
+changeSitename(site: firstWebSite)
+firstWebSite.siteName
 
 
