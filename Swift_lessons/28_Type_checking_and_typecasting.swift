@@ -5,6 +5,6 @@ class Furniture {
     let material: String
     
     init(material: String) {
-        
+        self.material = material
     }
 }
