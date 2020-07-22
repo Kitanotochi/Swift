@@ -8,3 +8,10 @@ class Furniture {
         self.material = material
     }
 }
+
+class Bed: Furniture {
+    let namberOfPlaces: Int
+    
+    init(namberOfPlaces: Int, material: String)
+}
+
