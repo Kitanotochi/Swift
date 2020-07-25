@@ -18,3 +18,12 @@ class Bed: Furniture {
     }
 }
 
+class Cupboard: Furniture {
+    let numberOfShelves: Int 
+    init(numberOfShelves: Int, material: String) {
+        self.numberOfShelves = numberOfShelves
+        super.init(material: material)
+        
+    }
+}
+
