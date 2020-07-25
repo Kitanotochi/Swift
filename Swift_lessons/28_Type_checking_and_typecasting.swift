@@ -10,8 +10,11 @@ class Furniture {
 }
 
 class Bed: Furniture {
-    let namberOfPlaces: Int
+    let numberOfPlaces: Int
     
-    init(namberOfPlaces: Int, material: String)
+    init(numberOfPlaces: Int, material: String) {
+        self.numberOfPlaces = numberOfPlaces
+        super.init(material: material)
+    }
 }
 
