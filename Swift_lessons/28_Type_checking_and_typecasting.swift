@@ -27,3 +27,36 @@ class Cupboard: Furniture {
     }
 }
 
+class Cupboard: Furniture {
+    let numberOfShelves: Int 
+    init(numberOfShelves: Int, material: String) {
+        self.numberOfShelves = numberOfShelves
+        super.init(material: material)
+        
+    }
+}
+
+// Создаем массив
+var arrayOfFurniture = [Furniture]()
+arrayOfFurniture.append(Bed(numberOfPlaces: 2, material: "Wood"))
+arrayOfFurniture.append(Bed(numberOfPlaces: 1, material: "Steel"))
+arrayOfFurniture.append(Bed(numberOfPlaces: 2, material: "Wood"))
+
+arrayOfFurniture.append(Cupboard(numberOfShelves: 4, material: "Wood"))
+arrayOfFurniture.append(Cupboard(numberOfShelves: 6, material: "Steel"))
+arrayOfFurniture.append(Cupboard(numberOfShelves: 3, material: "Wood"))
+arrayOfFurniture.append(Cupboard(numberOfShelves: 5, material: "Steel"))
+
+arrayOfFurniture
+
+// Записываем цикл
+var bed = 0
+var cupbord = 0
+
+for item in arrayOfFurniture {
+    if item is Bed {
+      bed += 1
+    } else {
+      cupbord += 1  
+    }
+}
