@@ -53,10 +53,12 @@ arrayOfFurniture
 var bed = 0
 var cupbord = 0
 
-for item in arrayOfFurniture {
+/* for item in arrayOfFurniture {
     if item is Bed {
       bed += 1
     } else {
       cupbord += 1  
     }
 }
+*/
+
