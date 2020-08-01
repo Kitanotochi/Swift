@@ -62,3 +62,11 @@ var cupbord = 0
 }
 */
 
+// Запишим этот цикл иначе
+for item in arrayOfFurniture {
+   if item is Bed {
+       let bedFoSure = item as! Bed
+       bed += 1
+   } 
+}
+
