@@ -70,3 +70,5 @@ for item in arrayOfFurniture {
    } 
 }
 
+bed
+cupbord
